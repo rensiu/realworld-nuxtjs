@@ -18,3 +18,27 @@ export const register = data => {
     data
   })
 }
+
+export const getUser = () => {
+  return request({
+    method: 'GET',
+    url: '/api/user'
+  })
+}
+
+export const updateUser = settings => {
+  return request({
+    method: 'PUT',
+    url: '/api/user',
+    data: {
+      user: {
+        email: settings.email,
+        bio: settings.bio,
+        image: settings.image,
+        username: settings.username,
+        password: settings.password
+      }
+    }
+  })
+
+}
