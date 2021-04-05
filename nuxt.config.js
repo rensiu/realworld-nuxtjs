@@ -58,7 +58,7 @@ module.exports = {
 
   server: {
     host: '0.0.0.0', /// localhost只能本地访问
-    port: 30000
+    port: 3000
   },
 
   // 注册插件
